@@ -985,7 +985,6 @@ body::after {
 }
 .article-blog__content {
   padding: 1.875rem;
-  flex: 0 1 63%;
   gap: 2.5rem
 }
 .article-blog__title {
@@ -996,7 +995,6 @@ body::after {
   margin-bottom: 1.875rem
 }
 .article-blog__image {
-  flex: 0 1 35%;
   display: block;
   position: relative;
   aspect-ratio: 1/1;
@@ -1110,6 +1108,12 @@ body::after {
   .hero__text {
     max-width: 80%
   }
+  .article-blog__content {
+    flex: 0 1 63%
+  }
+  .article-blog__image {
+    flex: 0 1 35%
+  }
   .form-contact-page {
     width: 80%
   }
@@ -1176,10 +1180,7 @@ body::after {
     font-size: 1.875rem
   }
   .why {
-    padding-top: 6.25rem
-  }
-  .why {
-    padding-bottom: 6.25rem
+    padding-bottom: 5rem
   }
   .item-why {
     gap: 1.875rem
@@ -1188,7 +1189,7 @@ body::after {
     font-size: 1.5rem
   }
   .contact {
-    padding-bottom: 6.25rem
+    padding-bottom: 5rem
   }
   .form-contact__title {
     font-size: 2.8125rem
@@ -1354,10 +1355,7 @@ body::after {
     font-size: 1.5rem
   }
   .why {
-    padding-top: 3.75rem
-  }
-  .why {
-    padding-bottom: 3.75rem
+    padding-bottom: 2.5rem
   }
   .item-why {
     gap: 1.25rem
@@ -1366,7 +1364,7 @@ body::after {
     font-size: 1.25rem
   }
   .contact {
-    padding-bottom: 3.75rem
+    padding-bottom: 2.5rem
   }
   .form-contact__title {
     font-size: 2.25rem
@@ -1457,6 +1455,16 @@ body::after {
   .form-contact__calendar {
     grid-template-columns: 1fr;
     gap: .75rem
+  }
+  .blog__articles {
+    display: flex;
+    flex-direction: column
+  }
+  .article-blog {
+    flex-direction: column
+  }
+  .article-blog__image {
+    aspect-ratio: 5/3
   }
 }
 @media (max-width:47.99875em) {
@@ -1610,10 +1618,7 @@ body::after {
     font-size: clamp(1.5rem ,1.3636363636rem + .6818181818vw ,1.875rem)
   }
   .why {
-    padding-top: clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)
-  }
-  .why {
-    padding-bottom: clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)
+    padding-bottom: clamp(2.5rem ,1.5909090909rem + 4.5454545455vw ,5rem)
   }
   .item-why {
     gap: clamp(1.25rem ,1.0227272727rem + 1.1363636364vw ,1.875rem)
@@ -1622,7 +1627,7 @@ body::after {
     font-size: clamp(1.25rem ,1.1590909091rem + .4545454545vw ,1.5rem)
   }
   .contact {
-    padding-bottom: clamp(3.75rem ,2.8409090909rem + 4.5454545455vw ,6.25rem)
+    padding-bottom: clamp(2.5rem ,1.5909090909rem + 4.5454545455vw ,5rem)
   }
   .form-contact__title {
     font-size: clamp(2.25rem ,2.0454545455rem + 1.0227272727vw ,2.8125rem)
